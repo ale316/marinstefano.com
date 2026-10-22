@@ -5,7 +5,7 @@ Single-page site for Stefano Marin, Consulente del Lavoro.
 - `docs/` is the live site, published by GitHub Pages (branch `main`, folder `/docs`).
   Edit `docs/index.html` and push; the change is live in a minute or two.
 - `docs/CNAME` holds the custom domain.
-- `docs/fonts/` contains self-hosted Libre Caslon (SIL Open Font License).
+- `docs/fonts/` contains self-hosted Schibsted Grotesk (SIL Open Font License).
 
 To preview locally:
 
