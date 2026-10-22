@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>marinstefano.com proposals</title>
+<style>
+  :root { --bg: #EEF0F3; --ink: #1D2430; --mute: #5D6675; --line: #D5DAE1; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, sans-serif; padding: 40px 16px 64px; }
+  .wrap { max-width: 1240px; margin: 0 auto; }
+  h1 { font-size: 1.75rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
+  .sub { color: var(--mute); margin: 0 0 2rem; max-width: 46em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 520px), 1fr)); gap: 28px; }
+  figure { margin: 0; background: #fff; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .frame { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 1px solid var(--line); background: #fff; }
+  .frame iframe { position: absolute; top: 0; left: 0; width: 1280px; height: 800px; border: 0; transform-origin: 0 0; pointer-events: none; }
+  figcaption { padding: 16px 18px 18px; }
+  figcaption h2 { margin: 0; font-size: 1.125rem; }
+  figcaption p { margin: .25rem 0 .75rem; color: var(--mute); font-size: .9375rem; }
+  figcaption a { font-weight: 600; color: #2450B8; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>marinstefano.com proposals</h1>
+  <p class="sub">Round two: C in three colour schemes, plus D. Address, fax and CAF removed; new mobile number, Albo n. 1017 and P.IVA added.</p>
+  <div class="grid">
+    <figure>
+      <div class="frame"><iframe src="grande-v2.html" title="Grande, grafite e ocra" loading="lazy" tabindex="-1"></iframe></div>
+      <figcaption><h2>C · Grande, graphite and ochre</h2><p>Charcoal grey with a warm ochre accent. Serious, a little warmer than blue.</p><a href="grande-v2.html">Open full page</a></figcaption>
+    </figure>
+    <figure>
+      <div class="frame"><iframe src="grande-v2.html?p=bordeaux" title="Grande, bordeaux" loading="lazy" tabindex="-1"></iframe></div>
+      <figcaption><h2>C · Grande, bordeaux</h2><p>Deep wine red with soft pink-stone text. Traditional, legal-professional feel.</p><a href="grande-v2.html?p=bordeaux">Open full page</a></figcaption>
+    </figure>
+    <figure>
+      <div class="frame"><iframe src="grande-v2.html?p=bosco" title="Grande, verde bosco" loading="lazy" tabindex="-1"></iframe></div>
+      <figcaption><h2>C · Grande, forest green</h2><p>Dark green with sage accents. Calm and trustworthy.</p><a href="grande-v2.html?p=bosco">Open full page</a></figcaption>
+    </figure>
+    <figure>
+      <div class="frame"><iframe src="biglietto-v2.html" title="Biglietto" loading="lazy" tabindex="-1"></iframe></div>
+      <figcaption><h2>D · Biglietto</h2><p>The business card, now with the Albo number where the address was.</p><a href="biglietto-v2.html">Open full page</a></figcaption>
+    </figure>
+  </div>
+</div>
+<script>
+  // scale each 1280px-wide preview to fit its card
+  const fit = () => document.querySelectorAll('.frame').forEach(f => {
+    f.querySelector('iframe').style.transform = `scale(${f.clientWidth / 1280})`;
+  });
+  addEventListener('resize', fit); fit();
+</script>
+</body>
+</html>

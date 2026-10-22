@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stefano Marin – Consulente del Lavoro a Roma</title>
+<meta name="description" content="Stefano Marin, Consulente del Lavoro iscritto all'Albo di Roma. Paghe e contributi, assunzioni, consulenza sui contratti, adempimenti INPS e INAIL, colf e badanti.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%23fff'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='28' text-anchor='middle' fill='%237A2E3A'%3ESM%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Stefano Marin – Consulente del Lavoro">
+<meta property="og:description" content="Consulente del Lavoro iscritto all'Albo di Roma, n. 1017. Paghe e contributi, assunzioni, consulenza sui contratti.">
+<meta property="og:locale" content="it_IT">
+<link rel="preload" href="fonts/libre-caslon-display.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/libre-caslon-text.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Stefano Marin","jobTitle":"Consulente del Lavoro","url":"https://marinstefano.com","telephone":"+39 375 855 3443","email":"smarin@marinstefano.com","taxID":"09794891003","workLocation":{"@type":"Place","address":{"@type":"PostalAddress","addressLocality":"Roma","addressCountry":"IT"}}}
+</script>
+<style>
+  /* Libre Caslon, self-hosted (SIL Open Font License, see fonts/) */
+  @font-face {
+    font-family: "Libre Caslon Display";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("fonts/libre-caslon-display.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Libre Caslon Text";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("fonts/libre-caslon-text.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "Libre Caslon Text";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("fonts/libre-caslon-text-italic.woff2") format("woff2");
+  }
+
+  :root {
+    --bg: #D8DEE3;
+    --card: #FFFFFF;
+    --ink: #22303A;
+    --mute: #5E6C77;
+    --wine: #7A2E3A;
+    --line: #E1E5E9;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.25rem;
+    padding: 48px 16px 32px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Libre Caslon Text", Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--wine); outline-offset: 3px; }
+
+  .card {
+    position: relative;
+    width: min(660px, 100%);
+    aspect-ratio: 85 / 55;
+    padding: clamp(28px, 6vw, 52px) clamp(24px, 6vw, 56px);
+    background: var(--card);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow:
+      0 1px 1px rgba(34,48,58,.06),
+      0 3px 6px rgba(34,48,58,.06),
+      0 28px 56px -20px rgba(34,48,58,.35);
+    animation: land 800ms cubic-bezier(.2,.8,.2,1) both;
+  }
+  .mono {
+    position: absolute;
+    top: clamp(24px, 5vw, 44px);
+    right: clamp(24px, 6vw, 56px);
+    font-family: "Libre Caslon Display", Georgia, serif;
+    font-size: 1.75rem;
+    line-height: 1;
+    color: var(--wine);
+    border: 1px solid var(--wine);
+    padding: .3em .35em .22em;
+  }
+  h1 {
+    margin: 0;
+    font-family: "Libre Caslon Display", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.25rem, 7vw, 3.25rem);
+    line-height: 1.05;
+    letter-spacing: -.01em;
+  }
+  .role {
+    margin: .5rem 0 0;
+    font-style: italic;
+    color: var(--wine);
+    font-size: 1.125rem;
+  }
+  .details {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem 2rem;
+    align-items: end;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    font-size: .9375rem;
+    line-height: 1.6;
+  }
+  .details p { margin: 0; }
+  .details .albo { color: var(--mute); font-style: italic; }
+  .details .right { list-style: none; margin: 0; padding: 0; text-align: right; }
+  .details .k.m { display: none; }
+  .details a { text-decoration: none; }
+  .details a:hover { color: var(--wine); text-decoration: underline; text-underline-offset: 3px; }
+  .details .k { color: var(--mute); font-style: italic; }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .75rem;
+  }
+  nav a {
+    text-decoration: none;
+    padding: .7rem 1.4rem;
+    border: 1px solid rgba(34,48,58,.25);
+    border-radius: 2px;
+    background: rgba(255,255,255,.35);
+    transition: background-color .15s, border-color .15s;
+  }
+  nav a:hover { background: #fff; border-color: var(--wine); color: var(--wine); }
+  nav a.primary { background: var(--wine); border-color: var(--wine); color: #fff; }
+  nav a.primary:hover { background: #64232E; color: #fff; }
+
+  .about {
+    max-width: 34em;
+    margin: 0;
+    text-align: center;
+    color: var(--mute);
+    font-size: .9375rem;
+  }
+  footer {
+    color: var(--mute);
+    font-size: .75rem;
+    text-align: center;
+    opacity: .85;
+  }
+
+  @keyframes land { from { opacity: 0; transform: translateY(14px) rotate(-.6deg); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .card { animation: none; } }
+  /* Phones: the card becomes a contact sheet with full-width, tappable rows */
+  @media (max-width: 560px) {
+    body { justify-content: flex-start; gap: 1.75rem; padding: 20px 16px 36px; }
+    .card { aspect-ratio: auto; justify-content: flex-start; padding: 32px 24px 8px; }
+    .mono { position: static; align-self: flex-start; font-size: 1.125rem; margin-bottom: 1.75rem; }
+    h1 { font-size: clamp(2.1rem, 10.5vw, 2.75rem); }
+    .role { font-size: 1.1875rem; margin-top: .4rem; }
+    .details {
+      grid-template-columns: 1fr;
+      gap: 0;
+      margin-top: 2rem;
+      padding-top: 0;
+      border-top: 0;
+      font-size: 1.0625rem;
+    }
+    .details .right { text-align: left; order: 1; }
+    .details .right li {
+      display: grid;
+      grid-template-columns: 3.25rem 1fr;
+      align-items: baseline;
+      border-top: 1px solid var(--line);
+    }
+    .details .right li:last-child { border-bottom: 1px solid var(--line); }
+    .details .k { font-size: .9375rem; }
+    .details .k.m { display: inline; }
+    .details .right a { display: block; padding: .85rem 0; overflow-wrap: anywhere; }
+    .details .albo { order: 2; padding: 1.1rem 0 1.25rem; font-size: .9375rem; line-height: 1.5; }
+    nav { flex-direction: column; width: 100%; gap: .625rem; }
+    nav a { text-align: center; padding: 1rem; font-size: 1.0625rem; }
+    .about { font-size: 1rem; line-height: 1.6; padding: 0 .5rem; }
+  }
+  /* Small phones: keep the email address on one line */
+  @media (max-width: 360px) {
+    .card { padding-left: 20px; padding-right: 20px; }
+    .details { font-size: 1rem; }
+    .details .right li { grid-template-columns: 2.9rem 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<main class="card">
+  <span class="mono" aria-hidden="true">SM</span>
+  <div>
+    <h1>Stefano Marin</h1>
+    <p class="role">Consulente del Lavoro</p>
+  </div>
+  <div class="details">
+    <p class="albo">Albo dei Consulenti del Lavoro<br>di Roma, n. 1017</p>
+    <ul class="right">
+      <li><span class="k">tel.</span> <a href="tel:+393758553443">375 855 3443</a></li>
+      <li><span class="k m">email</span> <a href="mailto:smarin@marinstefano.com">smarin@marinstefano.com</a></li>
+      <li><span class="k">pec</span> <a href="mailto:smarin@cdlrmpec.it">smarin@cdlrmpec.it</a></li>
+    </ul>
+  </div>
+</main>
+
+<nav aria-label="Contatti">
+  <a class="primary" href="tel:+393758553443">Chiama</a>
+  <a href="mailto:smarin@marinstefano.com">Scrivi un'email</a>
+</nav>
+
+<p class="about">Paghe e contributi, assunzioni e cessazioni, consulenza sui contratti, adempimenti INPS e INAIL, colf e badanti.</p>
+
+<footer>P.IVA 09794891003</footer>
+
+</body>
+</html>
