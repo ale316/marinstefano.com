@@ -6,7 +6,6 @@ Single-page site for Stefano Marin, Consulente del Lavoro.
   Edit `docs/index.html` and push; the change is live in a minute or two.
 - `docs/CNAME` holds the custom domain.
 - `docs/fonts/` contains self-hosted Libre Caslon (SIL Open Font License).
-- `proposte/` holds the design proposals; it is not published.
 
 To preview locally:
 
